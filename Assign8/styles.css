@@ -1,0 +1,305 @@
+body, header, footer{
+    background-color: white;
+}
+body{
+    background-image: url(images/gradient.jpg);
+    background-color: #ffc9f3;
+    background-repeat: repeat-x;
+}
+#wrapper{
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+header {
+    color: red;
+    background-image: url(images/hPhones.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 60px;
+    padding-top: 1px;
+}
+header h1{
+    margin-left: 63px;
+}
+h1 {
+    color: #f5425a;
+}
+
+h2{
+    color: #40b4db;
+}
+
+/* Styling of the navigation for mobile*/
+@media screen and (max-width: 705px){
+    nav {
+        padding: .2rem;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li a {
+        display: flex;
+        justify-content: center;
+        background-color: whitesmoke;
+        color: black;
+        border: 3px solid pink;
+        padding: 10px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+    }
+
+    nav ul li a:hover {
+        background-color: #444;
+        color: whitesmoke;
+    }
+    nav ul li.active a {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .active{
+        color: red;
+    }
+    .ttMain{
+        display: none;
+    }
+
+    .heroCap{
+        display: none;
+    }
+    .quote{
+        border-style: solid;
+        border-color: red;
+        border-width: 1px;
+        padding: 3px;
+        margin: 0
+
+    }
+    .galleryImg{
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+    }
+}
+
+/*NAVIGATION FOR THE TABLET AND DESKTOP*/
+@media screen and (min-width: 706px) {
+    header, nav, main, h2 {
+        max-width: 64rem;
+        margin:auto;
+        font-family: 'Simonetta';
+    }
+    h1{
+        text-shadow: 1.5px 1.5px black;
+    }
+    nav {
+        background: whitesmoke;
+        max-width: 64rem;
+        width: 100%;
+        height: 34px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin-left: 2%;
+    }
+    nav ul li {
+        float: left;
+        width: auto;
+    }
+    nav ul li a {
+        display: block;
+        color: black;
+        border-left: 1px solid #777;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        font-size: .9rem;
+        text-align: center;
+        max-width: 75rem;
+    }
+    nav ul li:first-child a {
+        border-left: 1px solid #777;
+
+    }
+    nav ul li:last-child a {
+        border-right: 1px solid #777;
+    }
+
+    nav ul li a:hover {
+        background-color: #444;
+        color: whitesmoke;
+    }
+    nav ul li.active a {
+        background-color: #000;
+        color: #fff;
+    }
+
+
+    .active{
+        background-image: linear-gradient(pink, white);
+    }
+    .ttMain{
+        float: right;
+        text-align: center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .quote{
+        display: flex;
+        justify-content: center;
+        text-shadow: 1.5px 1.5px black;
+        border-style: solid;
+        border-color: red;
+        border-width: 1px;
+        padding: 3px;
+        width: 40rem;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .galleryImg{
+        display: flex;
+        justify-content: center;
+        max-width: fit-content;
+    }
+
+} /* end of tablet and desktop navigation */
+
+
+/* Using this to style the lists */
+.favList li{
+    background-image: url(images/1.png);
+    background-repeat: no-repeat;
+    color: rgb(245, 66, 114);
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.bestList{
+    list-style-image: url(images/micBlack.png);
+}
+
+.defList dt{
+    padding-left: 2rem;
+}
+.defList dd{
+    font-style: italic;
+}
+
+.galleryImg{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.figBorder{
+    border-style: solid;
+    padding: 1rem;
+}
+
+legend {
+    background-color: #333;
+    color: #fff;
+    padding: 3px 6px;
+    border-radius: 25px;
+}
+
+.output {
+    font: 1rem 'Fira Sans', sans-serif;
+    border-radius: 25px;
+}
+
+input {
+    margin: .4rem;
+    border-radius: 25px;
+}
+
+.fillOut{
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.ty{
+    text-align: center;
+    border-radius: 25px;
+}
+
+.tyB{
+    border: none;
+
+}
+
+.sub{
+    padding: .5rem;
+    background-color: #f5425a;
+    border-radius: 25px;
+}
+
+.radioBtn{
+    border-radius: 25px;
+}
+
+footer{
+    text-align: center;
+    background-color: #ffc9f3;
+}
+main{
+
+}
+.frame{
+    margin-left: 5%;
+    width: 90%;
+    height: 20rem;
+    border: none;
+}
+
+.audio{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+}
+.addy{
+    margin-left: 5%;
+}
+table.tbh{
+    border: 1px solid pink;
+    box-shadow: 1px 3px 10px #456;
+    border-collapse: collapse;
+    background-color: #333;
+    color: black;
+    width: 90%;
+    margin-left: 5%;
+}
+
+table.tbh th{
+    background-color: #333;
+    padding: .5rem;
+}
+
+table.tbh td{
+    padding: .5rem;
+    border-bottom: solid #567 1px;
+}
+
+table.tbh tr:hover{
+    background-color: #f5425a;
+}
+
+table.tbh tr:nth-child(even){
+    background-image: linear-gradient(pink, white);
+    color: black;
+}
+table.tbh tr:nth-child(odd){
+    color: white;
+}

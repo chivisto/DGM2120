@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Contact</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, max-scale=1" />
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="headWrapper">
+                <header>
+                    <h1>
+                        Vay Kay Everyday!
+                    </h1>
+                    <h3>Make Everyday a Great Day!</h3>
+                </header>
+            </div>
+
+            <nav>
+                <ul class="navLinks"> 
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="destination.html">Destination</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+
+            <main>
+                <h1>Want some discounts? Fill this out!</h1><br>
+
+                <form action="thanks.html" method="POST">
+
+                    <fieldset class="radioBtn">
+                        <legend>Choose your favorite Place to Visit</legend>
+
+                        <input type="radio" id="France" required name="place">
+                        <label for="france">France</label><br/>
+
+                        <input type="radio" id="Mexico" required name="place">
+                        <label for="mexico">Mexico</label><br/>
+
+                        <input type="radio" id="Japan" required name="place">
+                        <label for="japan">Japan</label>
+                    </fieldset>
+                    <br><br>
+
+
+                    <fieldset class="fillOut">
+                        <legend>Join Our Mailing List for Coupons</legend><br>
+
+                        <label for="fName">First Name:</label>
+                        <input type="text" id="fName" name="fName" required><br><br>
+                        <label for="lName">Last Name:</label>
+                        <input type="text" id="lName" name="lName" required><br><br>
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="email" required><br><br>
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required><br><br>
+                    </fieldset>
+                    <br><br>
+
+                    <label for="location">Choose your Location:</label>
+                    <select id="location">
+                        <option value="rural" >Rural</option>
+                        <option value="city">City</option>
+                        <option value="town">Town</option>
+                        <option value="sub">Suburbs</option>
+                    </select><br><br><br>
+
+                    <textarea id="com" placeholder="Comments?" rows="4" cols="50"></textarea><br><br>
+
+                    <input class="inp" type="submit" value="Go!">
+                </form>
+            </main>
+
+            <footer>
+                <p>&copy; &bull; Isaac Covarrubias &bull; Vay Kay</p>
+            </footer>
+        </div>
+    </body>
+</html>

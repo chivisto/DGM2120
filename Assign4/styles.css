@@ -1,0 +1,97 @@
+/* Used to make everything nice and centered*/
+header, nav, main, h2 {
+        max-width: 64rem;
+        margin:auto;
+        font-family: 'Simonetta';
+}
+
+body, header, footer{
+    background-color: rgb(253, 255, 222);
+}
+
+header {
+    color: red;
+}
+
+h1 {
+    color: #f5425a;
+}
+
+h2{
+    color: #40b4db;
+}
+
+/* Styling of the navigation*/
+nav {
+    width: 100%;
+    background-color: #444;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 75rem;
+}
+nav ul li {
+    float: left;
+    width: 25%;
+}
+nav ul li a {
+    display: block;
+    background-color: whitesmoke;
+    color: black;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+nav ul li:first-child a {
+    border-left: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    color: whitesmoke;
+}
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+.active{
+    background-color: red;
+}
+
+.ftr{
+    background-color: whitesmoke;
+    text-align: center;
+    margin-bottom: 0;
+    
+}
+
+/* Using this to style the lists */
+.favList{
+    list-style-type: circle;
+    color: rgb(245, 66, 114);
+}
+
+.bestList{
+    list-style-type: upper-roman;
+}
+
+.defList dt{
+    padding-left: 2rem;
+}
+.defList dd{
+    font-style: italic;
+}
+
+.quote{
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    padding: 3px;
+    width: 40rem;
+    margin: 0;
+}
